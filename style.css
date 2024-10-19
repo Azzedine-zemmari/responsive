@@ -1,0 +1,108 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+    text-decoration: none;
+    list-style: none;
+}
+header{
+    position: fixed;
+    top: 0;
+    right: 0;
+    width: 100%;
+    padding: 15px 5%;
+    display: flex;
+    align-items: center;
+    column-gap:139px ;
+    background-color: transparent;
+}
+a>img{
+    width: 75px;
+    height: 75px;
+}
+header ul{
+    display: flex;
+}
+header ul li {
+    margin: 0 25px;
+    font-size: 24px;
+    font-weight: 500;
+    color: #f5f5f5;
+}
+.show {
+    display: block;
+}
+header svg{
+    display: none;
+}
+.home{
+    width: 100%;
+    height: 100vh;
+    background-image: url('./image/Rectangle-10.png');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: grid;
+    align-content: center;
+    padding-left: 50px;
+}
+.home p{
+    color: #E9BD8C;
+    font-weight: 700;
+    padding: 0 0 20px 0;
+    font-size: 20px;
+}
+.home h1{
+    font-size: 64px;
+    font-family: "Sansita Swashed", system-ui;
+    color: #f5f5f5;
+    font-weight: 400;
+}
+.shop {
+    margin: 10px 0;
+}
+.shop button{
+    background-color:#933C24 ;
+    padding: 15px ;
+    color: #f5f5f5;
+    border-radius: 5px;
+    border: none;
+    margin-right:15px;
+}
+.shop a{
+    color: #E9BD8C;
+    font-weight: bold;
+}
+@media (max-width:600px) {
+    header ul{
+        flex-direction: column;
+        position: absolute;
+        top: 80px;
+        right: 20px;
+        background-color: #111;
+        color: #f5f5f5;
+        padding: 12px 5px;
+        border-radius: 15px;
+        display: none;
+    }
+    header li{
+        padding: 6px 0;
+    }
+    header svg{
+        position: absolute;
+        right: 30px;
+        display: block;
+        color: #f5f5f5;
+    }
+    .home{
+        padding-left:15px ;
+    }
+    .home p{
+        padding-bottom: 8px;
+    }
+    .home h1{
+        font-size: 47px;
+    }
+
+}
