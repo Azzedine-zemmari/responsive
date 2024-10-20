@@ -92,6 +92,14 @@ header svg{
     background-color: #933C24;
     display: block;
 }
+.gallery{
+    display: grid;
+    justify-content: center;
+    margin: 10px 0 0 0 ;
+    grid-template-columns: repeat(3,auto);
+    grid-template-rows: repeat(3,auto);
+    gap: 20px;
+}
 @media (max-width:600px) {
     header ul{
         flex-direction: column;
@@ -122,5 +130,19 @@ header svg{
     .home h1{
         font-size: 47px;
     }
+    .gallery{
+        grid-template-columns: 1fr;
+    }
 
+}
+@media (max-width:1024px){
+    .home{
+        height: 50vh;
+    }
+    .gallery img{
+        width: 230px;
+    }
+    .gallery{
+        gap: 10px;
+    }
 }
