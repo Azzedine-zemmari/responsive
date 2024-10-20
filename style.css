@@ -74,6 +74,24 @@ header svg{
     color: #E9BD8C;
     font-weight: bold;
 }
+.explore{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+.explore ul{
+    display: flex;
+    column-gap: 20px;
+    padding: 10px 0 0 0 ;
+}
+.explore ul li:nth-child(1)::after{
+    content: "";
+    width: 30px;
+    height: 5px;
+    background-color: #933C24;
+    display: block;
+}
 @media (max-width:600px) {
     header ul{
         flex-direction: column;
